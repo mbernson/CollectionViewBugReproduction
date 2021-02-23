@@ -3,16 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		D55FA75925E3EDAE0068964B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55FA75825E3EDAE0068964B /* AppDelegate.swift */; };
 		D55FA75B25E3EDAE0068964B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55FA75A25E3EDAE0068964B /* SceneDelegate.swift */; };
 		D55FA75D25E3EDAE0068964B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55FA75C25E3EDAE0068964B /* ViewController.swift */; };
-		D55FA76025E3EDAE0068964B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D55FA75E25E3EDAE0068964B /* Main.storyboard */; };
 		D55FA76225E3EDB00068964B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D55FA76125E3EDB00068964B /* Assets.xcassets */; };
 		D55FA76525E3EDB00068964B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D55FA76325E3EDB00068964B /* LaunchScreen.storyboard */; };
+		D55FA76F25E3EDD70068964B /* DiffableDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = D55FA76E25E3EDD70068964B /* DiffableDataSources */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +20,6 @@
 		D55FA75825E3EDAE0068964B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D55FA75A25E3EDAE0068964B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D55FA75C25E3EDAE0068964B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D55FA75F25E3EDAE0068964B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D55FA76125E3EDB00068964B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D55FA76425E3EDB00068964B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D55FA76625E3EDB00068964B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D55FA76F25E3EDD70068964B /* DiffableDataSources in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +59,6 @@
 				D55FA75825E3EDAE0068964B /* AppDelegate.swift */,
 				D55FA75A25E3EDAE0068964B /* SceneDelegate.swift */,
 				D55FA75C25E3EDAE0068964B /* ViewController.swift */,
-				D55FA75E25E3EDAE0068964B /* Main.storyboard */,
 				D55FA76125E3EDB00068964B /* Assets.xcassets */,
 				D55FA76325E3EDB00068964B /* LaunchScreen.storyboard */,
 				D55FA76625E3EDB00068964B /* Info.plist */,
@@ -83,6 +82,9 @@
 			dependencies = (
 			);
 			name = CollectionViewBug;
+			packageProductDependencies = (
+				D55FA76E25E3EDD70068964B /* DiffableDataSources */,
+			);
 			productName = CollectionViewBug;
 			productReference = D55FA75525E3EDAE0068964B /* CollectionViewBug.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +112,9 @@
 				Base,
 			);
 			mainGroup = D55FA74C25E3EDAE0068964B;
+			packageReferences = (
+				D55FA76D25E3EDD70068964B /* XCRemoteSwiftPackageReference "DiffableDataSources" */,
+			);
 			productRefGroup = D55FA75625E3EDAE0068964B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,7 +131,6 @@
 			files = (
 				D55FA76525E3EDB00068964B /* LaunchScreen.storyboard in Resources */,
 				D55FA76225E3EDB00068964B /* Assets.xcassets in Resources */,
-				D55FA76025E3EDAE0068964B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,14 +150,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D55FA75E25E3EDAE0068964B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D55FA75F25E3EDAE0068964B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D55FA76325E3EDB00068964B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -341,6 +337,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D55FA76D25E3EDD70068964B /* XCRemoteSwiftPackageReference "DiffableDataSources" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Q42/DiffableDataSources";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D55FA76E25E3EDD70068964B /* DiffableDataSources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D55FA76D25E3EDD70068964B /* XCRemoteSwiftPackageReference "DiffableDataSources" */;
+			productName = DiffableDataSources;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D55FA74D25E3EDAE0068964B /* Project object */;
 }
